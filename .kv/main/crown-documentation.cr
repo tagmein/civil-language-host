@@ -1,5 +1,7 @@
 set document [ at document ]
 
+set [ get document ] title 'Crown Documentation'
+
 set build [ load ./lib/build.cr, point ]
 set element [ load ./lib/element.cr, point ]
 

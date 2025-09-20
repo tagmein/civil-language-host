@@ -46,6 +46,7 @@ const INITIAL = {
  " "(control) {
   control.queueToStatement();
  },
+ "\r"() {},
  "\n"(control) {
   control.queueToStatement();
   control.statementToBlock();
