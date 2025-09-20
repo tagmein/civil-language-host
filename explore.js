@@ -89,6 +89,9 @@ export const explore = {
     cr() {
      return `<a href="/run?mode=${requestParams.mode}&key=${requestParams.key}">Run</a>`;
     },
+    html() {
+     return `<a href="/run?mode=${requestParams.mode}&key=${requestParams.key}">Run</a>`;
+    },
    }[extension]?.() ?? "";
   const back = `<p><a href="/">&larr; home</a><a href="${destination}">&larr; mode</a><a href="${destination}?mode=${requestParams.mode}">&larr; key</a>${extraContent}</p>`;
   response.statusCode = 200;

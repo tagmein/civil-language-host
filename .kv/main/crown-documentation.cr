@@ -1,4 +1,5 @@
 set document [ at document ]
+set location [ at location ]
 
 set [ get document ] title 'Crown Documentation'
 
@@ -29,8 +30,9 @@ get code, call 'add 4 5, log The sum is [ current ] # prints \'The sum is 9\' to
 
 get header, call 'Getting Started' 2
 
-get paragraph, call 'Download a copy of the Crown JavaScript Engine from https://tagme.in/crown.js and add the following code to an HTML file:'
-
+get paragraph, call [
+ template 'Download a copy of the Crown JavaScript Engine from <a href="%0/language/crown.js">%0/language/crown.js</a> and add the following code to an HTML file:' [ get location origin ]
+]
 get code, call '<!doctype html>
 <html>
 
