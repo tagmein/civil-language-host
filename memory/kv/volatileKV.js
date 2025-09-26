@@ -1,7 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.volatileKV = volatileKV;
-function volatileKV() {
+export function volatileKV() {
     const data = new Map();
     return {
         async delete(key) {

@@ -1,7 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.httpKV = httpKV;
-function httpKV({ baseUrl }) {
+export function httpKV({ baseUrl }) {
     return {
         async get(key) {
             const url = new URL(baseUrl);

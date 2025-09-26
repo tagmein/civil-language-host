@@ -1,7 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.diskKV = diskKV;
-function diskKV({ rootDir, fsPromises, path, }) {
+export function diskKV({ rootDir, fsPromises, path, }) {
     let isInitialized = false;
     async function diskPath(namespace, key) {
         if (namespace === '') {
